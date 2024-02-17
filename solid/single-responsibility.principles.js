@@ -5,6 +5,7 @@ class Order {
     this.item = item;
   }
 }
+
 class OrderManager {
   constructor() {
     this.order = null;
@@ -21,6 +22,7 @@ class OrderManager {
     sendMailOrder.sendMailOrder(this.order);
   }
 }
+
 class SendMailOrder {
   sendMailOrder(order) {
     console.log("Mail sent", order);
