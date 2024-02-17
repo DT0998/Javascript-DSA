@@ -1,11 +1,28 @@
 // A module should be responsible for only one actor. As a consequence, it has only one reason to change
-class List {
-  constructor() {
-    this.list = [];
-  }
-  addItems(item) {
-    this.list.push(item);
+class Order {
+  constructor(id, item) {
+    this.id = id;
+    this.item = item;
   }
 }
-
-class 
+class OrderManager {
+  constructor() {
+    this.order = null;
+  }
+  addOrder(id, item) {
+    const order = new Order(id, item);
+    this.order = order;
+  }
+  getOrder() {
+    return order;
+  }
+  sendMail() {
+    const sendMailOrder = new SendMailOrder();
+    sendMailOrder.sendMailOrder(this.order);
+  }
+}
+class SendMailOrder {
+  sendMailOrder(order) {
+    console.log("Mail sent", order);
+  }
+}
