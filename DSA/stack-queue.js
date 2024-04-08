@@ -5,9 +5,6 @@ class Node {
     }
 }
 
-
-
-
 // stack
 class Stack{
     constructor(){
@@ -42,9 +39,6 @@ class Stack{
         return temp.values
     }
 }
-
-
-
 
 // queue
 class Queue{

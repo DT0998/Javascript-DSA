@@ -1,4 +1,5 @@
 // Tốt hơn: Tuân thủ nguyên tắc LSP bằng cách sử dụng giao diện thay vì kế thừa
+// Trong một chương trình, các object của class con có thể thay thế class cha mà không làm thay đổi tính đúng đắn của chương trình
 class Shape {
   area() {
     throw new Error("This method must be overridden");
